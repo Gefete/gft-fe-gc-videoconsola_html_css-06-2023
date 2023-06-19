@@ -1,0 +1,369 @@
+/* Botonera */
+#screen{
+    width: 100%;
+    height: 78%;
+    background-color: #414246;
+    margin-top: 20px;
+}
+/* Buttons area */
+#buttons_c_circle_left{
+    right: 23px;
+}
+#buttons_c_circle_s_left{
+    right: 24px;
+}
+#buttons_circle_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons_c_circle_right{
+    left: 37px;
+}
+#buttons_circle_right{
+    left: 41px;
+}
+#buttons_c_circle_s_right{
+    left: 36px;
+}
+/*  */
+
+/* joystick area */
+#joystick_c_circle_s_left{
+    left: 28px;
+}
+#joystick_c_circle_s_right{
+    left: 28px;
+}
+/*  */
+
+#connect_but_joy_right{
+    rotate: 17deg;
+    left: 48px;
+}
+#connect_but_joy_left{
+    rotate: 345deg;
+    left: 28px;
+}
+#inter_left_left{
+    position: relative;
+    width: 17px;
+    left: 23px;
+    bottom: 226%;
+    height: 23px;
+    rotate: -19deg;
+    clip-path: circle(55% at -6%);
+    z-index: 7;
+}
+#inter_right_left{
+    bottom: 251%;
+    left: 57px;
+    width: 15px;
+    height: 24px;
+    rotate: -16deg;
+    shape-outside: circle(68% at 50%);
+    clip-path: circle(46% at 102%);
+    z-index: 6;
+}
+#inter_left_right{
+    width: 17px;
+    left: 47px;
+    bottom: 232%;
+    height: 23px;
+    rotate: 4deg;
+    clip-path: circle(55% at -6%);
+    z-index: 6;
+}
+#inter_right_right{
+    bottom: 238%;
+    left: 83px;
+    width: 15px;
+    height: 38px;
+    rotate: 18deg;
+    shape-outside: circle(68% at 50%);
+    clip-path: circle(45% at 104%);
+    /* background-color: aqua; */
+    z-index: 6;
+}
+#circle_connector_shadow_l{
+    width: 17px;
+    left: 24px;
+    position: relative;
+    bottom: 236%;
+    height: 27px;
+    rotate: -19deg;
+    clip-path: circle(55% at -6%);
+    background-color: #09090b;
+    z-index: 6;
+    visibility: hidden;
+}
+#button_ps_contain{
+    width: 50%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 221%;
+    background-color: black;
+    z-index: 6;
+    left: 11px;
+    clip-path: ellipse(45% 46%);
+}
+
+
+
+
+#button_ps{
+    width: 97%;
+    height: 97%;
+    position: relative;
+    background-color: #19191b;
+    z-index: 6;
+    clip-path: ellipse(45% 46%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button_ps img{
+    width: 50%;
+    height: 50%;
+    filter: invert(1);
+}
+#button_select_contain{
+    width: 35%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 212%;
+    background-color: black;
+    z-index: 6;
+    left: 27px;
+    clip-path: ellipse(45% 46%);
+}
+#button_select{
+    width: 97%;
+    height: 97%;
+    position: relative;
+    background-color: #19191b;
+    z-index: 6;
+    clip-path: ellipse(45% 46%);
+    color: #8c8d8f;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button_start_contain{
+    width: 35%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 219%;
+    background-color: black;
+    z-index: 6;
+    left: 76px;
+    clip-path: ellipse(45% 46%);
+}
+#button_start{
+    width: 97%;
+    height: 97%;
+    position: relative;
+    background-color: #19191b;
+    z-index: 6;
+    color: #8c8d8f;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: ellipse(45% 46%);
+}
+#cruzeta{
+    width: 98%;
+    height: 98%;
+    display: grid;
+    grid-template-columns: 34% 34% 34%;
+    grid-template-rows: 34% 34% 34%;
+    border-radius: 100px;
+/*     background-color: beige; */
+    justify-content: center;
+    align-content: center;
+}
+#cruzeta img{
+    width: 35%;
+    height: 35%;
+}
+#cruzeta_up{
+    grid-row: 1;
+    grid-column: 2;
+}
+#cruzeta_up img{
+    position: relative;
+    /* top: 3px; */
+    rotate: -90deg;
+}
+#cruzeta_bot{
+    grid-row: 3;
+    grid-column: 2;
+}
+#cruzeta_bot img{
+    position: relative;
+    /* top: 3px; */
+    rotate: 90deg;
+}
+#cruzeta_left{
+    grid-row: 2;
+    grid-column: 1;
+}
+#cruzeta_left img{
+    position: relative;
+    /* top: 3px; */
+    rotate: 180deg;
+}
+#cruzeta_right{
+    grid-row: 2;
+    grid-column: 3;
+}
+#cruzeta_right img{
+    position: relative;
+    /* top: 3px; */
+    rotate: 0deg;
+}
+#cruzeta_center{
+    grid-row: 2;
+    grid-column: 2;
+    position: relative;
+    width: 103%;
+    height: 103%;
+    right: 0.5px;
+    bottom: 0.5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+#center_cruz{
+    display: contents;
+}
+#center_cruz_top_left_box_1{
+    grid-column: 1;
+    grid-row: 1;
+    clip-path: polygon( 0% 95%, 0% 0%, 100% 90% );
+    position: relative;
+    top: 2px;
+    
+}
+#center_cruz_top_right_box_1{
+    grid-column: 1;
+    position: relative;
+    grid-row: 1;
+    clip-path: polygon( 0% 0%, 95% 0%, 90% 100% );
+    left: 2px;
+}
+#center_cruz_top_left_box_2{
+    grid-column: 2;
+    grid-row: 1;
+    clip-path: polygon( 5% 0%, 10% 100%, 100% 0% );
+    position: relative;
+    right: 2px;
+    
+}
+#center_cruz_top_right_box_2{
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    top: 2px;
+    clip-path: polygon( 0% 90%, 100% 0%, 100% 95% );
+}
+
+#center_cruz_bot_left_box_3{
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    bottom: 2px;
+    clip-path: polygon( 0% 5%, 0% 100%, 100% 10% );
+}
+
+
+#center_cruz_bot_right_box_3{
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    clip-path: polygon( 0% 100%, 90% 0%, 95% 100% );
+    left: 2px;
+}
+#center_cruz_bot_left_box_4{
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    right: 2px;
+    clip-path: polygon( 5% 100%, 10% 0%, 100% 100% );
+}
+
+#center_cruz_bot_right_box_4{
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    clip-path: polygon( 0% 10%, 100% 5%, 100% 100% );
+    bottom: 2px;
+}
+
+
+#control_buttons{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 34% 34% 34%;
+    grid-template-rows: 34% 34% 34%;
+    justify-items: center;
+    align-items: center;
+}
+
+#button_circle{
+    grid-row: 2;
+    grid-column: 3;
+}
+#button_cross{
+    grid-row: 3;
+    grid-column: 2;
+}
+#button_square {
+    grid-row: 2;
+    grid-column: 1;
+}
+#button_triangle {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+
+#logo_company{
+    width: 18%;
+    height: 8%;
+    position: relative;
+    bottom: 315%;
+    left: 33px;
+    z-index: 15;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #f9f9f9;
+    transform: scaleX(1.6);
+}
+
+#logo_console{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#logo_console img{
+    width: 19%;
+    height: 44%;
+    filter: invert(1);
+    margin-top: 10px;
+}

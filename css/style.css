@@ -1,0 +1,312 @@
+body{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#real_size_contain{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 780px;
+    height: 370px;
+    /* background: url(../img/PlayStation_Vita_illustration.png) no-repeat; */
+    background-size:contain;
+    margin: auto;
+}
+
+/* -- -- Izquierda -- -- */
+#base_borde_left{
+    top: 7%;
+    width: 22%;
+    height: 99.3%;
+    border-radius: 190px 0 0 190px;
+    background-color: #c2c3c5;
+    z-index: 1;
+}
+
+#top_left_erase{
+    height: 15%;
+    clip-path: polygon( 31% 100%, 47% 97%, 57% 94%, 64% 88%,74% 68%, 76% 62%, 86% 25%, 99% 100% );
+    z-index: 2;
+}
+#zone_left{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+    z-index: 98;
+}
+
+/* -> Inside #zone_left */
+#border_left_buttons{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50%;
+    z-index: 2;
+}
+#left_buttons_area::before{
+    content: '';
+    display: block;
+    width: 126%;
+    height: 109%;
+    border-radius: 100%;
+    right: 34%;
+    bottom: 4%;
+    position: relative;
+    z-index: 2;
+    background-color: aqua;
+}
+#left_buttons_area{
+    width: 73%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    z-index: 2;
+}
+/* <- outside */
+
+#bottom_left_erase{
+    height: 20%;
+    clip-path: polygon( 31% 0%, 47% 4%, 57% 9%, 64% 15%,74% 27%, 76% 30%, 86% 52%, 99% -3% );
+}
+/* -- -- FIN Izquierda -- -- */
+
+
+/* -- -- -- Centro -- -- -- */
+#base_centro{
+    width: 450px;
+    height: 100%;
+    border-radius: 3px 3px 0 0;
+    background-color: #c2c3c5;
+    /* border-radius: 177px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    flex-direction: column;
+    z-index: 2;
+}
+#center_black{
+    position: relative;
+    width: 473px;
+    height: 96%;
+    /* background-color: black; */
+    padding: 0 15px 0 15px;
+    border-radius: 20px;
+    display: block;
+    justify-items: center;
+    align-items: start;
+    z-index: 3;
+}
+
+
+/* #zone_center{
+    width: 65%;
+    height: 97%;
+    border-top: 4px #7d7e80 solid;
+    border-radius: 20px;
+} */
+/* -- -- -- FIN Centro -- -- -- */
+
+
+/* -- -- Derecha -- -- */
+#base_borde_right{
+    width: 22%;
+    height: 99.3%;
+    border-radius: 0 177px 177px 0;
+    background-color: #c2c3c5;
+    z-index: 1;
+}
+
+
+#top_right_erase{
+    height: 15%;
+    z-index: 2;
+    clip-path: polygon( 7% 101%, 15% 32%, 23% 58%, 35% 79%, 46% 88%,50% 90%, 55% 93%, 70% 100% );
+   /*  clip-path: polygon(99% 100%, 86% 25%, 76% 62%, 74% 68%, 64% 88%,  57% 94%, 47% 97%,31% 100%); */
+}
+#zone_right{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* -> Inside #zone_left */
+#border_right_buttons{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50%;
+    z-index: 2;
+}
+#right_buttons_area::before{
+    content: '';
+    display: block;
+    width: 126%;
+    height: 109%;
+    border-radius: 100%;
+    left: 9%;
+    bottom: 4%;
+    position: relative;
+    z-index: 2;
+    background-color: aqua;
+}
+#right_buttons_area{
+    
+    width: 73%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    z-index: 2;
+}
+/* <- outside */
+
+#bottom_right_erase{
+    height: 20%;
+    z-index: 2;
+    clip-path: polygon( 7% -1%, 10% 62%, 23% 32%, 35% 16%, 46% 8%,50% 6%, 55% 4%, 72% -1% );
+}
+/* -- -- FIN Derecha -- -- */
+
+
+/* --- GENERAL --- */
+.color_general, #left_buttons_area::before, #right_buttons_area::before{
+    background-color: #19191b;
+}
+.buttons_contain_circle_shadow{
+    width: 110px;
+    position: relative;
+    height: 110px;
+    shape-outside: circle();
+    clip-path: circle();
+    background-color: #09090b;
+    bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.buttons_contain_circle{
+    width: 89%;
+    height: 42%;
+    position: relative;
+    shape-outside: circle();
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b4b4d;
+    bottom: 366px;
+    right: 23px;
+    z-index: 6;
+}
+.buttons_contain{
+    shape-outside: ellipse(20% 50%);
+    clip-path: ellipse(49% 50%);
+    width: 83%;
+    right: 19px;
+    height: 38%;
+    position: relative;
+    bottom: 469px;
+    background-color: #5d5d5f;
+    z-index: 7;
+}
+.joystick_contain_circle_shadow{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    bottom: 180%;
+    shape-outside: circle();
+    clip-path: circle();
+    z-index: 6;
+    background-color: #09090b;
+}
+.connector_buttons_joystick{
+    width: 45px;
+    height: 50px;
+    position: relative;
+    bottom: 211%;
+    background-color: #4b4b4d;
+    z-index: 5;
+}
+.joystick_contain_circle{
+    width: 98%;
+    height: 98%;
+    shape-outside: circle();
+    clip-path: circle();
+    display: flex;
+    background-color: #4b4b4d;
+    justify-content: center;
+    align-items: center;
+}
+.joystick_contain{
+    width: 85%;
+    height: 85%;
+    border-radius: 100px;
+    border: 1px #b7b7b8 solid;
+    background-color: #4b4b4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joystick{
+    width: 55%;
+    height: 55%;
+    border-radius: 100px;
+    border: 8px #0b0c0e solid;
+    background-color: #4b4b4d;
+}
+
+.circle_interconnector_right, .circle_interconnector_left{
+    width: 34px;
+    height: 50px;
+    position: relative;
+    shape-outside: circle();
+    clip-path: circle();
+   /*  background-color: coral; */
+}
+.circle_interconnector_right{
+    shape-outside: circle(68% at 50%);
+    clip-path: circle(43% at 104%);
+    /* background-color: aqua; */
+}
+.circle_interconnector_left{
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+}
+.color_cruzeta{
+    background-color: #353638;
+}
+.buttons_control_form{
+    width: 90%;
+    height: 82%;
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cruzeta_config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #353638;
+}
+.buttons_control_form img{
+    width: 55%;
+    height: 55%;
+    filter: grayscale(1);
+}
