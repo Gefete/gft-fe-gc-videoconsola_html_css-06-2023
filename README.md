@@ -9,4 +9,6 @@ Desarrollo de una Video Consola mediante HTML y CSS
 
 <br>
 
+### Referencia
+
 ![PlayStation_Vita_illustration](https://github.com/Gefete/gft-fe-gc-videoconsola_html_css-06-2023/assets/84667512/46a43967-3780-4580-858f-32862510c79e)
